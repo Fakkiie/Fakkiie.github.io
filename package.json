@@ -1,9 +1,12 @@
 {
-	"name": "riadh-adrani",
+	"homepage": "https://Fakkiie.github.io/",
+	"name": "LandonHadre",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -30,6 +33,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^6.1.1",
 		"marked": "^5.1.1",
 		"marked-gfm-heading-id": "^3.0.4",
 		"marked-mangle": "^1.1.0",

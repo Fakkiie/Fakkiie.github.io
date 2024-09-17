@@ -231,7 +231,7 @@ export const items = [
 			'N/A',
 		logo: Assets.HTML,
 		name: 'HTML',
-		category: 'other'
+		category: 'Markup & Style'
 	}),
 	defineSkill({
 		slug: 'css',
@@ -240,7 +240,7 @@ export const items = [
 			'N/A',
 		logo: Assets.CSS,
 		name: 'CSS',
-		category: 'other'
+		category: 'Markup & Style'
 	}),
 	
 ] as const;
