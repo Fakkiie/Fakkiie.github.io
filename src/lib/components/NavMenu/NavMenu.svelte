@@ -118,13 +118,15 @@
 	.nav-menu {
 		display: flex;
 		justify-content: center;
-		position: sticky;
-		top: 0px;
-		z-index: 10;
-		padding: 0px 10px;
+		position: fixed; 
+		z-index: 1000; 
+		padding: 0 10px;
 		height: 50px;
 		border-bottom: 1px solid var(--secondary);
 		background-color: var(--main);
+		width: 100%; 
+	
+
 
 		&-item {
 			text-decoration: none;

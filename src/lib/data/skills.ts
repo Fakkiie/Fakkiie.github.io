@@ -17,7 +17,7 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Tools', slug: 'tool' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -39,7 +39,7 @@ export const items = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'My favourite programming langugage that is used in Nest and Quiest Quest, as well as in my leetcode',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -48,55 +48,201 @@ export const items = [
 		slug: 'ts',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'html',
-		color: 'orange',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
-	}),
-	defineSkill({
 		slug: 'reactjs',
 		color: 'cyan',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'My favourite library to use, I use it in all of my projects when possible such as Nest and Quiet Quest',
 		logo: Assets.ReactJs,
 		name: 'React Js',
 		category: 'library'
 	}),
 	defineSkill({
-		slug: 'svelte',
+		slug: 'python',
+		color: 'yellow',
+		description:
+			'My very first programming language, it is a langauge I love going back to. This was used in my Blackjack AI project, as well as for a backend in the Nest project.',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'docker',
+		color: 'blue',
+		description:
+			'N/A',
+		logo: Assets.Docker,
+		name: 'Docker',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'brown',
+		description:
+			'N/A',
+		logo: Assets.AWS,
+		name: 'AWS',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'gcp',
+		color: 'white',
+		description:
+			'N/A',
+		logo: Assets.GCP,
+		name: 'GCP',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'git',
 		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
+		description:
+			'Used in all of my coding projects as a way to effectivly manage my projects',
+		logo: Assets.Git,
+		name: 'Git',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'postgressql',
+		color: 'blue',
+		description:
+			'Used as a backend in Nest and Quiet Quest',
+		logo: Assets.PostgreSQL,
+		name: 'Postgres',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'mongodb',
+		color: 'green',
+		description:
+			'N/A',
+		logo: Assets.MongoDB,
+		name: 'MongoDB',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'red',
+		description:
+			'Used extensivley in school such as databases & algorithms',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'php',
+		color: 'purple',
+		description:
+			'Used in many of my school assignments and projects related to web development',
+		logo: Assets.PHP,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'unity',
+		color: 'black',
+		description:
+			'Love to fiddle round with unity and game creation in my spare time.',
+		logo: Assets.Unity,
+		name: 'Unity',
+		category: 'tool'
+	}),
+	defineSkill({
+		slug: 'c',
+		color: 'blue',
+		description:
+			'First languaged used in university classes and what I built my foundation of programming on',
+		logo: Assets.C,
+		name: 'C/C++',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'sql',
+		color: 'orange',
+		description:
+			'Learnt and used in my database course',
+		logo: Assets.SQL,
+		name: 'SQL',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'nextjs',
+		color: 'white',
+		description:
+			'N/A',
+		logo: Assets.NextJS,
+		name: 'Next.js',
 		category: 'library'
-	})
+	}),
+	defineSkill({
+		slug: 'nodejs',
+		color: 'yellow',
+		description:
+			'N/A',
+		logo: Assets.NodeJs,
+		name: 'Node.js',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'purple',
+		description:
+			'N/A',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'tailwind',
+		color: 'blue',
+		description:
+			'Used in hackathon projecy',
+		logo: Assets.Tailwind,
+		name: 'Tailwind',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'pandas',
+		color: 'black',
+		description:
+			'N/A',
+		logo: Assets.Pandas,
+		name: 'Pandas',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'pytorch',
+		color: 'red',
+		description:
+			'N/A',
+		logo: Assets.Pytorch,
+		name: 'Pytorch',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'html',
+		color: 'orange',
+		description:
+			'N/A',
+		logo: Assets.HTML,
+		name: 'HTML',
+		category: 'other'
+	}),
+	defineSkill({
+		slug: 'css',
+		color: 'blue',
+		description:
+			'N/A',
+		logo: Assets.CSS,
+		name: 'CSS',
+		category: 'other'
+	}),
+	
 ] as const;
 
 export const title = 'Skills';

@@ -4,50 +4,36 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
-		slug: 'open-sourcer',
-		company: 'Self-employed',
-		description: 'Creating awesome tools for developers.',
-		contract: ContractType.SelfEmployed,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('ts', 'js'),
-		name: 'Open Source Developer',
-		color: 'red',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome tools for developers.'
-	},
-	{
-		slug: 'software-freelance',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
-		name: 'Freelancer',
+		slug: 'grounds-crew',
+		company: 'Seven Lakes Championship Golf & Estates',
+		description: 'Assisted in maintaining the golf course, including mowing, landscaping, and keeping greens and fairways in top condition, while also providing excellent customer service by managing tee times, greeting guests, and addressing inquiries.',
+		contract: ContractType.FullTime,
+		type: '',
+		location: 'Windsor',
+		period: { from: new Date('2022-04-01'), to: new Date() },
+		skills: getSkills(''),
+		name: 'Grounds Crew',
 		color: 'blue',
 		links: [],
-		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
+		logo: Assets.Seven,
+		shortDescription: 'Maintain the grounds for the golf course'
 	},
 	{
-		slug: 'software-freelance-junior',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date(2022, 0, 1), to: new Date() },
-		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
+		slug: 'stocker',
+		company: 'Freshco',
+		description: 'Put prodcuts on the wall and assist customers in need of finding products. Maintain a standard level on cleanliness on the floor and in the back.',
+		contract: ContractType.PartTime,
+		type: '',
+		location: 'Windsor',
+		period: { from: new Date('2022-09-01'), to: new Date() },
+		skills: getSkills(''),
+		name: 'Stocker',
 		color: 'green',
 		links: [],
-		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
-	}
+		logo: Assets.Freshco,
+		shortDescription: 'Stock shelves and help customers'
+	},
+	
 ];
 
 export const title = 'Experience';

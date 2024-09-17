@@ -1,3 +1,2 @@
-export const data = '';
-
-export const title = 'Resumé';
+export const data = '/ResumeLandonHadre.pdf'; // Path to your PDF file
+export const title = 'Resume';

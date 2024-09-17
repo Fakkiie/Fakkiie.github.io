@@ -70,7 +70,19 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	GCP: a('gcp.png'),
+	Git: a('git.png'),
+	PHP: a('php.png'),
+	Unity: a('unity.png'),
+	SQL: a('sql.png'),
+	NextJS: a('next.png'),
+	Pytorch: a('pytorch.png'),
+	nest: a('bird.png'),
+	blackjack: a('blackjack.png'),
+	qq: a('qq.png'),
+	Seven: a('sevenlakes.png'),
+	Freshco: a('freshco.png')
 };
 
 export default Assets;

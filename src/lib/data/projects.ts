@@ -4,61 +4,104 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'nest',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			`Developed 'Nest,' a React Native mobile app leveraging Postgres 
+			and external image recognition APIs to identify bird species, and secured 3rd place 
+			at <a href="https://winhacks.ca/">WinHacks 2024</a>, a University of Windsor hackathon with hundreds of participants. To see more please
+			refer to the devpost
+			https://devpost.com/software/nest-x0wlea#updates`,
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'An application developed to assist in your bird watching journey',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.nest,
+		name: 'Nest',
 		period: {
-			from: new Date()
+			from: new Date('2024-2-17'), 
+			to: new Date('2024-02-18') 
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
-	},
-	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
-		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: getSkills('reactjs', 'ts', 'tailwind','python'),
+		type: 'Hackathon app',
 		screenshots: [
 			{
-				label: 'screen 1',
-				src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
+				label: 'Home',
+				src: '/screenshots/nest1.png'
 			},
 			{
-				label: '2',
-				src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
+				label: 'Info',
+				src: '/screenshots/nest2.png'
 			},
 			{
-				label: '3',
-				src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
+				label: 'List',
+				src: '/screenshots/nest3.png'
+			},
+			
+		]
+		
+	},
+	{
+		slug: 'blackjack',
+		color: '#ff3e00',
+		description:
+			'Developed a Blackjack simulation bot with Python using Q-learning for optimizing strategies through Reinforcement Learning, implementing an epsilon-greedy policy for dynamic action selection based on rewards, and created three AI versions—one with card counting, one without, and a default—testing each by simulating over 1 million game rounds to assess strategy effectiveness.',
+		shortDescription:
+			'An AI that is capable of learning basic strategy, as well as dynamically betting',
+		links: [{ to: 'https://github.com/Fakkiie/Blackjack-AI', label: 'GitHub' }],
+		logo: Assets.blackjack,
+		name: 'Blackjack AI',
+		period: {
+			from: new Date('2024-01-5'), 
+			to: new Date('2024-04-21') 
+		},
+		skills: getSkills('python', 'pytorch', 'pandas',),
+		type: 'AI bot',
+		screenshots: [
+			{
+				label: 'Basic Strat',
+				src: '/screenshots/blackjack1.png'
 			},
 			{
-				label: '4',
-				src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
+				label: 'Dynamic Betting',
+				src: '/screenshots/blackjack2.png'
+			},
+			
+		]
+	},
+	{
+		slug: 'Quiet Quest',
+		color: '#ff3e00',
+		description:
+			'Designed and developed a responsive job search website with a user-friendly interface using React, implemented a database using PostgreSQL to manage job listings and user data, streamlining the job search process and tailoring it to individual needs, and integrated advanced search and filtering capabilities, allowing users to find jobs based on specific criteria.',
+		shortDescription:
+			'Simple and effictive tool to apply for jobs',
+		links: [{ to: 'https://github.com/Fakkiie/QuietQuest', label: 'GitHub' }],
+		logo: Assets.qq,
+		name: 'QuietQuest',
+		period: {
+			from: new Date('2024-03-1'), 
+			to: new Date('2024-04-21') 
+		},
+		skills: getSkills('reactjs','php'),
+		type: 'AI bot',
+		screenshots: [
+			{
+				label: 'Filtering page',
+				src: '/screenshots/quiet1.png'
 			},
 			{
-				label: '5',
-				src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
+				label: 'Landing Page',
+				src: '/screenshots/quiet2.png'
 			},
 			{
-				label: '6',
-				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			}
+				label: 'Login/Signup',
+				src: '/screenshots/quiet3.png'
+			},
+			{
+				label: 'Logout',
+				src: '/screenshots/quiet4.png'
+			},
+			
 		]
 	}
 ];
