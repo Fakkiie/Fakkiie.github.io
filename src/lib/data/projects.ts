@@ -83,7 +83,7 @@ export const items: Array<Project> = [
 			to: new Date('2024-04-21') 
 		},
 		skills: getSkills('reactjs','php'),
-		type: 'AI bot',
+		type: 'Job website',
 		screenshots: [
 			{
 				label: 'Filtering page',
