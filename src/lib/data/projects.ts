@@ -21,7 +21,7 @@ export const items: Array<Project> = [
 			from: new Date('2024-2-17'), 
 			to: new Date('2024-02-18') 
 		},
-		skills: getSkills('reactjs', 'ts', 'tailwind','python'),
+		skills: getSkills('reactnative', 'ts', 'tailwind','python'),
 		type: 'Hackathon app',
 		screenshots: [
 			{

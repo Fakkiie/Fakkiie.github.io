@@ -82,7 +82,9 @@ const Assets = {
 	blackjack: a('blackjack.png'),
 	qq: a('qq.png'),
 	Seven: a('sevenlakes.png'),
-	Freshco: a('freshco.png')
+	Freshco: a('freshco.png'),
+	ReactNative: a('react.svg')
+	
 };
 
 export default Assets;

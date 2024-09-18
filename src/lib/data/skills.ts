@@ -39,7 +39,7 @@ export const items = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'My favourite programming langugage that is used in Nest and Quiest Quest, as well as in my leetcode',
+			'My favourite programming langugage that is used in Nest and Quiet Quest, as well as in my leetcode',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -242,6 +242,16 @@ export const items = [
 		name: 'CSS',
 		category: 'Markup & Style'
 	}),
+	defineSkill({
+		slug: 'reactnative',
+		color: 'blue',
+		description:
+			'N/A',
+		logo: Assets.ReactNative,
+		name: 'React Native',
+		category: 'library'
+	}),
+	
 	
 ] as const;
 

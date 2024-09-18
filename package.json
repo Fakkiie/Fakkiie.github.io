@@ -1,12 +1,12 @@
 {
-	"homepage": "https://Fakkiie.github.io/",
+	"homepage": "https://github.com/Fakkiie/Fakkiie.github.io",
 	"name": "LandonHadre",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d build -r https://github.com/Fakkiie/Fakkiie.github.io",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
