@@ -103,7 +103,24 @@ export const items: Array<Project> = [
 			},
 			
 		]
-	}
+	},
+	{
+		slug: 'devdesk',
+		color: '#000',
+		description:
+			'Currently building a virtual co-working space platform for collaboration, coding, and interviews.\n Leading the front-end development using React and tailwind CSS, while implementing the back end with JavaScript (Node.js) to ensure a scalable and efficient server-side architecture.\n Developing key features such as real-time collaboration, user management, and room creation with admin controls for enhanced user experience.\n Overseeing cloud deployment, continuous integration, and delivery pipelines to ensure smooth and reliable platform updates. \nActively involved in shaping the business model, focusing on user acquisition, future monetization strategies, and aligning technical development with the company’s long-term vision.',
+		shortDescription:
+			'A collaborative virtual space for developers and educators to work together seamlessly',
+		links: [{ to: 'https://github.com/Fakkiie/DevDesk', label: 'GitHub' }],
+		logo: Assets.DevDesk,
+		name: 'DevDesk',
+		period: { from: new Date('2024-09-04'), to: new Date() },
+		skills: getSkills('reactjs', 'tailwind', 'nodejs','js','docker','python'),
+		type: 'Software',
+		screenshots: [
+			
+		]
+	},
 ];
 
 export const title = 'Projects';
