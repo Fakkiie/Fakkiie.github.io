@@ -251,7 +251,15 @@ export const items = [
 		name: 'React Native',
 		category: 'library'
 	}),
-	
+	defineSkill({
+		slug: 'threejs',
+		color: 'white',
+		description:
+			'N/A',
+		logo: Assets.ThreeJS,
+		name: 'ThreeJS',
+		category: 'library'
+	}),
 	
 ] as const;
 

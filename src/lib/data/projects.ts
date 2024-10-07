@@ -121,6 +121,44 @@ export const items: Array<Project> = [
 			
 		]
 	},
+	{
+		slug: 'nasahack',
+		color: '#000',
+		description:
+			'Our project, Space Apps 2024, is an interactive web app that simulates planetary orbits using React, Three.js, and the Horizon API. We utilized the Horizon API to fetch accurate real-time planetary data, ensuring our simulations are both engaging and scientifically accurate. This project addresses the challenge of making space education more accessible and visually stimulating by allowing users to interact with 3D models and explore planetary details. Its importance lies in enhancing space education through cutting-edge technology and real-time data integration.',
+		shortDescription:
+			'Our project creates a visual and interactive experience to simulate planetary orbits in space.',
+		links: [{ to: 'https://timmy-space-apps-2024.vercel.app/', label: 'Website' }],
+		
+
+		logo: Assets.Spongebob,
+		name: 'Nasa Hackathon',
+		period: {
+			from: new Date('2024-10-5'), 
+			to: new Date('2024-10-6') 
+		},
+		skills: getSkills('ts', 'tailwind', 'nodejs','js','threejs','nextjs'),
+		type: 'Hackathon',
+		screenshots: [
+			{
+				label: 'Home',
+				src: '/screenshots/timmymain.png'
+			},
+			{
+				label: 'Zoomed Out',
+				src: '/screenshots/zoomout.png'
+			},
+			{
+				label: 'Panel',
+				src: '/screenshots/panel.png'
+			},
+			{
+				label: 'About',
+				src:'/screenshots/about.png'
+			}
+			
+		]
+	},
 ];
 
 export const title = 'Projects';

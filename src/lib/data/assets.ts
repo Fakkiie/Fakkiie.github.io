@@ -84,7 +84,9 @@ const Assets = {
 	Seven: a('sevenlakes.png'),
 	Freshco: a('freshco.png'),
 	ReactNative: a('react.svg'),
-	DevDesk: a('devdesk.jpg')
+	DevDesk: a('devdesk.jpg'),
+	ThreeJS: a('threejs.png'),
+	Spongebob: a('spongebob-chair.png')
 	
 };
 
