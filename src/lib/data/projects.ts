@@ -159,6 +159,39 @@ export const items: Array<Project> = [
 			
 		]
 	},
+	{
+		slug: 'srdashboard',
+		color: '#000',
+		description:
+			'The SR Dashboard is an interactive tool I built to visualize service request data on a map. It lets users upload new data, dynamically updates JSON files, and shows the number and type of requests for each ward when you click on them. It’s a simple yet effective way to track and manage service requests visually.',
+		shortDescription:
+			'Dashboard for service requests in Windsor',
+		links: [{ to: 'https://comp-3220-team2-31wp.vercel.app/', label: 'Website' }],
+		
+
+		logo: Assets.Srlogo,
+		name: 'SR Dashboard',
+		period: {
+			from: new Date('2024-9-10'), 
+			to: new Date('2024-11-27') 
+		},
+		skills: getSkills('ts', 'tailwind', 'nodejs','js','postgressql','reactjs','python'),
+		type: 'Project',
+		screenshots: [
+			{
+				label: 'Home',
+				src: '/screenshots/dashboard.png'
+			},
+			{
+				label: 'On Click',
+				src: '/screenshots/onclick.png'
+			},
+			{
+				label: 'Upload',
+				src: '/screenshots/upload.png'
+			}
+		]
+	},
 ];
 
 export const title = 'Projects';

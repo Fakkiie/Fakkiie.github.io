@@ -86,7 +86,9 @@ const Assets = {
 	ReactNative: a('react.svg'),
 	DevDesk: a('devdesk.jpg'),
 	ThreeJS: a('threejs.png'),
-	Spongebob: a('spongebob-chair.png')
+	Spongebob: a('spongebob-chair.png'),
+	Srlogo: a('srlogo.png'),
+	JSOSIF: a('jsosiflogo.png')
 	
 };
 

@@ -33,6 +33,21 @@ export const items: Array<Experience> = [
 		logo: Assets.Freshco,
 		shortDescription: 'Stock shelves and help customers'
 	},
+	{
+		slug: 'developer',
+		company: 'John Simpson Odette Student Investment Fund',
+		description: 'I am actively involved in migrating the organization’s website from Wix to React, focusing on modernizing the interface and improving performance. As part of the project, I am creating team-specific dashboards to enhance internal engagement through tailored content. Additionally, I developed a React frontend featuring a graph to visualize risk and return trade-offs based on ticket weights. To streamline dynamic content updates for the user portal, I integrated API endpoints with the frontend and implemented an efficient database structure to optimize query performance for data retrieval.',
+		contract: ContractType.PartTime,
+		type: '',
+		location: 'Windsor',
+		period: { from: new Date('2024-11-04'), to: new Date() },
+		skills: getSkills('reactjs','js','tailwind','python','nodejs','postgressql'),
+		name: 'Junior Software Developer',
+		color: 'white',
+		links: [],
+		logo: Assets.JSOSIF,
+		shortDescription: 'Programmer for the school investment fund'
+	},
 	
 	
 ];
