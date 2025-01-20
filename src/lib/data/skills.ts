@@ -39,7 +39,7 @@ export const items = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'My favourite programming langugage that is used in Nest and Quiet Quest, as well as in my leetcode',
+			'N/A',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -48,7 +48,7 @@ export const items = [
 		slug: 'ts',
 		color: 'blue',
 		description:
-			'',
+			'N/A',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
@@ -57,7 +57,7 @@ export const items = [
 		slug: 'reactjs',
 		color: 'cyan',
 		description:
-			'My favourite library to use, I use it in all of my projects when possible such as Nest and Quiet Quest',
+			'N/A',
 		logo: Assets.ReactJs,
 		name: 'React Js',
 		category: 'library'
@@ -66,7 +66,7 @@ export const items = [
 		slug: 'python',
 		color: 'yellow',
 		description:
-			'My very first programming language, it is a langauge I love going back to. This was used in my Blackjack AI project, as well as for a backend in the Nest project.',
+			'N/A',
 		logo: Assets.Python,
 		name: 'Python',
 		category: 'pro-lang'
@@ -102,7 +102,7 @@ export const items = [
 		slug: 'git',
 		color: 'orange',
 		description:
-			'Used in all of my coding projects as a way to effectivly manage my projects',
+			'N/A',
 		logo: Assets.Git,
 		name: 'Git',
 		category: 'tool'
@@ -111,7 +111,7 @@ export const items = [
 		slug: 'postgressql',
 		color: 'blue',
 		description:
-			'Used as a backend in Nest and Quiet Quest',
+			'N/A',
 		logo: Assets.PostgreSQL,
 		name: 'Postgres',
 		category: 'tool'
@@ -129,7 +129,7 @@ export const items = [
 		slug: 'java',
 		color: 'red',
 		description:
-			'Used extensivley in school such as databases & algorithms',
+			'N/A',
 		logo: Assets.Java,
 		name: 'Java',
 		category: 'pro-lang'
@@ -138,7 +138,7 @@ export const items = [
 		slug: 'php',
 		color: 'purple',
 		description:
-			'Used in many of my school assignments and projects related to web development',
+			'N/A',
 		logo: Assets.PHP,
 		name: 'PHP',
 		category: 'pro-lang'
@@ -147,7 +147,7 @@ export const items = [
 		slug: 'unity',
 		color: 'black',
 		description:
-			'Love to fiddle round with unity and game creation in my spare time.',
+			'N/A',
 		logo: Assets.Unity,
 		name: 'Unity',
 		category: 'tool'
@@ -156,7 +156,7 @@ export const items = [
 		slug: 'c',
 		color: 'blue',
 		description:
-			'First languaged used in university classes and what I built my foundation of programming on',
+			'N/A',
 		logo: Assets.C,
 		name: 'C/C++',
 		category: 'pro-lang'
@@ -165,7 +165,7 @@ export const items = [
 		slug: 'sql',
 		color: 'orange',
 		description:
-			'Learnt and used in my database course',
+			'N/A',
 		logo: Assets.SQL,
 		name: 'SQL',
 		category: 'pro-lang'

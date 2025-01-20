@@ -7,7 +7,7 @@ export const items: Array<Experience> = [
 		slug: 'grounds-crew',
 		company: 'Seven Lakes Championship Golf & Estates',
 		description: 'Assisted in maintaining the golf course, including mowing, landscaping, and keeping greens and fairways in top condition, while also providing excellent customer service by managing tee times, greeting guests, and addressing inquiries.',
-		contract: ContractType.FullTime,
+		contract: ContractType.PartTime,
 		type: '',
 		location: 'Windsor',
 		period: { from: new Date('2022-04-01'), to: new Date() },
@@ -47,6 +47,21 @@ export const items: Array<Experience> = [
 		links: [],
 		logo: Assets.JSOSIF,
 		shortDescription: 'Programmer for the school investment fund'
+	},
+	{
+		slug: 'ai-intern',
+		company: 'Glendor',
+		description: 'I was tasked with leading a group of 3 others to develop and train an AI model that is capable of obscuring sensitive data from pathology slides. I was responsible for the development and training of the 3 models used. I also led 3 others in the development for our workflow to automate the process of obscuring the data.',
+		contract: ContractType.Internship,
+		type: '',
+		location: 'Draper, UT',
+		period: { from: new Date('2025-01-02'), to: new Date() },
+		skills: getSkills('python','pandas','pytorch'),
+		name: 'AI Engineer Intern',
+		color: 'green',
+		links: [],
+		logo: Assets.Glendor,
+		shortDescription: 'AI Intern tasked with obscuring sensiive data'
 	},
 	
 	

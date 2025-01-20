@@ -88,7 +88,9 @@ const Assets = {
 	ThreeJS: a('threejs.png'),
 	Spongebob: a('spongebob-chair.png'),
 	Srlogo: a('srlogo.png'),
-	JSOSIF: a('jsosiflogo.png')
+	JSOSIF: a('jsosiflogo.png'),
+	Glendor: a('glendor.png'),
+
 	
 };
 
