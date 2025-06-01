@@ -55,13 +55,13 @@ export const items: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: '',
 		location: 'Draper, UT',
-		period: { from: new Date('2025-01-02'), to: new Date() },
+		period: { from: new Date('2025-01-02'), to: new Date('2025-04-30') },
 		skills: getSkills('python','pandas','pytorch'),
 		name: 'AI Engineer Intern',
 		color: 'green',
 		links: [],
 		logo: Assets.Glendor,
-		shortDescription: 'AI Intern tasked with obscuring sensiive data'
+		shortDescription: 'AI Intern tasked with obscuring sensitive data'
 	},
 	
 	
