@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.37760311.js";import{g as s}from"./skills.43957ad1.js";const n=[{slug:"nest",color:"#5e95e3",description:`Developed 'Nest,' a React Native mobile app leveraging Postgres 
+import{A as e}from"./UIcon.5d4d924a.js";import{g as s}from"./skills.c2fb5d90.js";const n=[{slug:"nest",color:"#5e95e3",description:`Developed 'Nest,' a React Native mobile app leveraging Postgres 
 			and external image recognition APIs to identify bird species, and secured 3rd place 
 			at <a href="https://winhacks.ca/">WinHacks 2024</a>, a University of Windsor hackathon with hundreds of participants. To see more please
 			refer to the devpost
