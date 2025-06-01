@@ -150,8 +150,6 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Dashboard for service requests in Windsor',
 		links: [{ to: 'https://comp-3220-team2-31wp.vercel.app/', label: 'Website' }],
-		
-
 		logo: Assets.Srlogo,
 		name: 'SR Dashboard',
 		period: {
@@ -172,6 +170,37 @@ export const items: Array<Project> = [
 			{
 				label: 'Upload',
 				src: '/screenshots/upload.png'
+			}
+		]
+	},
+	{
+		slug: 'swyper',
+		color: '#000',
+		description:
+			'Built a Solana trading app on the Solana blockchain using Rust and React, enabling users to trade tokens with real-time data and a user-friendly interface. The app integrates with the Solana network for secure transactions and utilizes React for a responsive frontend, providing a seamless trading experience.',
+		shortDescription:
+			'Solana Trading dApp',
+		links: [{ to: 'https://github.com/Fakkiie/cryptodapp', label: 'Github' }],
+		logo: Assets.Swyper,
+		name: 'Swyper dApp',
+		period: {
+			from: new Date('2025-01-02'), 
+			to: new Date('2025-01-30') 
+		},
+		skills: getSkills('ts', 'tailwind', 'nodejs','nextjs','reactjs','rust'),
+		type: 'Project',
+		screenshots: [
+			{
+				label: 'Home',
+				src: '/screenshots/shome.png'
+			},
+			{
+				label: 'Token Selection',
+				src: '/screenshots/tokenselection.png'
+			},
+			{
+				label: 'Connected Wallet',
+				src: '/screenshots/connectedwallet.png'
 			}
 		]
 	},

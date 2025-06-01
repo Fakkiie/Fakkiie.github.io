@@ -45,6 +45,15 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'rust',
+		color: 'orange',
+		description:
+			'N/A',
+		logo: Assets.Rust,
+		name: 'Rust',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'ts',
 		color: 'blue',
 		description:

@@ -23,7 +23,7 @@ const Assets = {
 	Numpy: a('numpy.svg'),
 	Pandas: a('pandas.svg'),
 	RabbitMQ: a('rabbitmq.svg'),
-	Rust: a('rust.svg', 'rust-dark.png'),
+	Rust: a('rust.png'),
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
 	Docker: a('docker.svg'),
@@ -90,6 +90,8 @@ const Assets = {
 	Srlogo: a('srlogo.png'),
 	JSOSIF: a('jsosiflogo.png'),
 	Glendor: a('glendor.png'),
+	Swyper: a('swyper.png'),
+	
 
 	
 };
