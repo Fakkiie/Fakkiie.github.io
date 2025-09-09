@@ -39,12 +39,9 @@ export default function Home() {
     },
   }[lang];
 
-  // 🔑 force-update <title> and meta tags on toggle
   useEffect(() => {
-    // title
     document.title = meta.title;
 
-    // helper to set <meta name|property="x" content="...">
     const setMeta = (
       key: string,
       content: string,
@@ -104,7 +101,12 @@ export default function Home() {
           <div
             className={`relative border-l-2 border-black mt-2 w-[75%] mx-auto ${fadeDir}`}
           >
-            {t["experience.items"].map((item: any, i: number) => (
+            {t["experience.items"].map((item: {
+              role: string;
+              company: string;
+              dates: string;
+              bullets: string[];
+            }, i: number) => (
               <div
                 key={`${lang}-exp-${i}`}
                 className="relative flex items-start mb-2"
@@ -141,7 +143,13 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {t["projects.items"].map((item: any, i: number) => (
+            {t["projects.items"].map((item: {
+              title: string;
+              description: string;
+              technologies: string[];
+              year: number | string;
+              link: string;
+            }, i: number) => (
               <ProjectCard
                 key={`${lang}-project-${i}`}
                 title={item.title}
