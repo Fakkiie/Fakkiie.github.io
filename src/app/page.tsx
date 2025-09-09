@@ -1,103 +1,198 @@
-import Image from "next/image";
+// src/app/page.tsx
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import LangPill from "@/components/Langpill";
+import SakuraLayer from "@/components/SakuraLayer";
+import ProjectCard from "@/components/ProjectCard";
+import en from "@/locales/en.json";
+import ja from "@/locales/ja.json";
+import { TablerBrandGithub } from "@/components/icons/Github";
+import { TablerBrandLinkedin } from "@/components/icons/Linkedin";
+
+const STR = { en, ja } as const;
+type Lang = keyof typeof STR;
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [lang, setLang] = useState<Lang>("en");
+  const t = STR[lang];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  // a11y
+  useEffect(() => {
+    document.documentElement.setAttribute("lang", lang);
+  }, [lang]);
+
+  const fadeDir = useMemo(
+    () => (lang === "en" ? "fade-left" : "fade-right"),
+    [lang]
+  );
+
+  const meta = {
+    en: {
+      title: "Landon Hadre — Software Engineer & Language Learner",
+      description:
+        "Portfolio showcasing projects, experience, and bilingual journey.",
+    },
+    ja: {
+      title: "ランドン — ソフトウェアエンジニア＆言語学習者",
+      description: "プロジェクト、経験、二言語学習のポートフォリオ。",
+    },
+  }[lang];
+
+  // 🔑 force-update <title> and meta tags on toggle
+  useEffect(() => {
+    // title
+    document.title = meta.title;
+
+    // helper to set <meta name|property="x" content="...">
+    const setMeta = (
+      key: string,
+      content: string,
+      attr: "name" | "property" = "name"
+    ) => {
+      let el = document.head.querySelector<HTMLMetaElement>(
+        `meta[${attr}="${key}"]`
+      );
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+
+    setMeta("description", meta.description, "name");
+    setMeta("og:title", meta.title, "property");
+    setMeta("og:description", meta.description, "property");
+  }, [meta.title, meta.description]);
+
+  return (
+    <div className="min-h-screen bg-white text-black relative overflow-hidden">
+      {lang === "ja" && <SakuraLayer enabled />}
+
+      <div className="relative z-10 min-h-screen">
+        <LangPill lang={lang} setLang={setLang} />
+
+        {/* Hero / About */}
+        <section className="flex flex-col items-center pt-12">
+          <h1
+            key={lang}
+            className={`text-3xl font-semibold text-center max-w-3xl ${fadeDir}`}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            {t.hero}
+          </h1>
+          <hr
+            className={`mt-12 border-l-2 h-40 mx-6 ${
+              lang === "ja" ? "border-primary" : "border-black"
+            }`}
+          />
+          <h4 className={`mt-12 text-xl font-semibold ${fadeDir}`}>
+            {t["about.title"]}
+          </h4>
+          <p className={`mt-2 leading-8 text-lg text-black w-[75%] ${fadeDir}`}>
+            {t["about.body"]}
+          </p>
+        </section>
+
+        {/* Experience */}
+        <div className="h-64" />
+        <section className="flex flex-col items-center px-6">
+          <h2 className={`text-2xl font-bold ${fadeDir}`}>
+            {t["experience.title"]}
+          </h2>
+
+          <div
+            className={`relative border-l-2 border-black mt-2 w-[75%] mx-auto ${fadeDir}`}
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+            {t["experience.items"].map((item: any, i: number) => (
+              <div
+                key={`${lang}-exp-${i}`}
+                className="relative flex items-start mb-2"
+              >
+                <div className="flex-shrink-0 w-4 h-4 bg-primary rounded-full border-2 border-white z-10 mt-2 -ml-[9px]" />
+                <div className="pl-6">
+                  <h3 className="font-extrabold text-base sm:text-lg break-words">
+                    {item.role}
+                    <span className="block sm:inline"> – {item.company}</span>
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-500">
+                    {item.dates}
+                  </p>
+                  <ul className="list-disc text-sm sm:text-base mt-3 pl-5">
+                    {item.bullets.map((b: string, j: number) => (
+                      <li key={j} className="pl-0">
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Projects */}
+        <div className="h-64" />
+        <section className="mx-auto w-full max-w-7xl px-6 py-12">
+          <h2
+            className={`mb-6 text-center text-2xl font-bold text-black ${fadeDir}`}
+          >
+            {t["projects.title"]}
+          </h2>
+
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {t["projects.items"].map((item: any, i: number) => (
+              <ProjectCard
+                key={`${lang}-project-${i}`}
+                title={item.title}
+                desc={item.description}
+                tech={item.technologies}
+                year={String(item.year)}
+                link={item.link}
+                lang={lang}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <div className="h-64" />
+        <section
+          className={`mx-auto w-full max-w-2xl px-6 py-16 text-center ${fadeDir}`}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <h2 className={`mb-6 text-2xl font-bold ${fadeDir}`}>
+            {t["contact.title"]}
+          </h2>
+          <p className={`mb-8 text-gray-600 ${fadeDir}`}>{t["contact.body"]}</p>
+
+          <div className={`flex justify-center gap-8 ${fadeDir}`}>
+            <a
+              href={t["contact.links"].github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center ${
+                lang === "ja" ? "hover:text-primary" : ""
+              }`}
+            >
+              <TablerBrandGithub className="inline-block w-6 h-6 mr-2 align-middle" />
+              <span>GitHub</span>
+            </a>
+            <a
+              href={t["contact.links"].linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center ${
+                lang === "ja" ? "hover:text-primary" : ""
+              }`}
+            >
+              <TablerBrandLinkedin className="inline-block w-6 h-6 mr-2 align-middle" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </section>
+        <div className="h-64" />
+        {/* <div className="h-[120vh]" /> */}
+      </div>
     </div>
   );
 }

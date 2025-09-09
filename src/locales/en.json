@@ -1,0 +1,108 @@
+{
+  "hero": "Hi, I’m Landon — Software Engineer & Language Learner.",
+  "about.title": "About me",
+  "about.body": "I'm a 4th year computer science student at the University of Windsor, passionate about software engineering and language learning. I learn Japanese through immersion, mainly by reading manga and watching anime. Engaging with native materials daily helps me improve my language skills naturally. I enjoy building web applications, exploring new technologies, and collaborating on innovative projects. I'm always eager to learn, grow, and take on new challenges. In my spare time I immerse myself in Japanese by watchig anime and reading manga. My hopes are to be a JET program teacher for the 2026 cohort to teach english abroad in Japan!",
+  "experience.title": "Experience",
+  "experience.items": [
+    {
+      "role": "Founding Engineer",
+      "company": "YAP Technologies",
+      "dates": "Jul 2025 – Present",
+      "bullets": [
+        "Rewrote mobile/web app from Angular/Ionic into React/Next.js + Typescript, improving bundle performance by 25%, improved backend scalability with transaction logging, session checks and secure DB access controls.",
+        "Designed & deployed ERC-20 YAP token on Sei Testnet using Ethers.js including writing, testing, and verifying smart contracts. Built on-chain paywalls via an ERC-20 transfer call gated through Postgres.",
+        "Dockerized dev environments and configured AWS deployments for both frontend and backend services. Led CI/CD & code quality assurance by authoring GitHub action pipelines, enforcing linting/testing, and ran code reviews"
+      ]
+    },
+    {
+      "role": "AI Engineer Intern",
+      "company": "Glendor",
+      "dates": "Jan 2025 - Apr 2025",
+      "bullets": [
+        "Evaluating open-source algorithms for extracting slide labels and handwriting from pathology slides",
+        "Creating workflows for accurate extraction of text and labels from pathology slides using Python",
+        "Tuning object detection models for improved performance on handwriting and label recognition",
+        "Designing and implementing a robust pipeline to automate the extraction, preprocessing, and model training processes, ensuring scalability and consistency across tasks"
+      ]
+    },
+    {
+      "role": "Lead Software Developer",
+      "company": "Enactus Windsor (Club)",
+      "dates": "Jul 2025 – Present",
+      "bullets": [
+        "Redesigned and rebuilt the club’s website from scratch using Next.js, TypeScript, and Tailwind CSS, resulting in a modern, responsive, and maintainable platform",
+        "Implemented best practices for accessibility, SEO, and performance optimization, significantly improving user experience and site discoverability",
+        "Collaborated with team members to gather requirements, iterate on UI/UX designs, and deploy updates efficiently"
+      ]
+    },
+    {
+      "role": "Senior Software Developer",
+      "company": "JSOSIF (Club)",
+      "dates": "Nov 2024 – Present",
+      "bullets": [
+        "Migrated the organization’s website from Wix to React, modernizing the interface and improving performance",
+        "Building a comprehensive hub that serves as a centralized portal for all applications developed by the club",
+        "Developed a React frontend with a graph to visualize risk and return trade-offs based on ticket weights"
+      ]
+    }
+  ],
+
+  "projects.title": "Projects",
+  "projects.items": [
+    {
+      "title": "KYC Provider",
+      "description": "Our ETH Global 2025 hackathon project out of New York",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Ethers.js",
+        "Solidity"
+      ],
+      "year": 2025,
+      "link": "https://github.com/ethankonk/eth-global-2025"
+    },
+    {
+      "title": "Swyper",
+      "description": "A Solana crypto coin swapping platform.",
+      "technologies": ["React", "TypeScript", "SolanaSDK", "Rust"],
+      "year": 2025,
+      "link": "https://github.com/Fakkiie/cryptodapp"
+    },
+    {
+      "title": "Nest Bird ID",
+      "description": "A bird identification app built during UWindsor's 2024 hackathon.",
+      "technologies": ["React Native", "TypeScript", "expo.io", ""],
+      "year": 2024,
+      "link": "https://devpost.com/software/nest-x0wlea#updates"
+    },
+    {
+      "title": "Blackjack AI",
+      "description": "An AI that plays and dynamically bets blackjack using Q-learning.",
+      "technologies": ["Python", "Pytorch", "NumPy", "Tensorflow"],
+      "year": 2024,
+      "link": "https://github.com/Fakkiie/Blackjack-AI"
+    },
+    {
+      "title": "SR Dashboard",
+      "description": "A dashboard for visualizing reports in Windsors districts.",
+      "technologies": ["React", "JavaScript", "Express", "Node.js", "Python", "PostgreSQL"],
+      "year": 2024,
+      "link": "https://github.com/Fakkiie/COMP3220-Team2"
+    },
+    {
+      "title": "Fitness Tracker",
+      "description": "A fitness tracking app built for those into science and strength training.",
+      "technologies": ["React Native", "TypeScript", "expo.io"],
+      "year": 2024,
+      "link": "https://github.com/Fakkiie/fitnessapp"
+    }
+  ],
+  "contact.title": "Contact",
+  "contact.body": "Let’s build something together.",
+  "contact.links": {
+    "github": "https://github.com/Fakkiie",
+    "linkedin": "https://linkedin.com/in/landonhadre"
+  }
+}
