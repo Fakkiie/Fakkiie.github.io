@@ -1,6 +1,6 @@
 // App.tsx — adds a centered ABOUT section with subtle kanji background
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { Mail, Github, Linkedin } from "lucide-react";
 import { SiX } from "react-icons/si";
@@ -162,7 +162,7 @@ export default function App() {
 
               <div className="mt-14 md:mt-16 flex flex-wrap items-center gap-x-8 gap-y-4">
                 {LINKS.map((l) => {
-                  const Icon = l.icon as any;
+                  const Icon = l.icon as React.ComponentType<{ className?: string }>;
                   return (
                     <a
                       key={l.label}
