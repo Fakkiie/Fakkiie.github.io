@@ -437,7 +437,7 @@ export default function App() {
                 title: "Capstone - COMP 4990",
                 themeJp: "堅",
                 themeEn: "integrity",
-                desc: "secure sharging session management in V2G systems using blockchain.",
+                desc: "secure charging session management in V2G systems using blockchain.",
                 links: [
                   {
                     label: "Github",
