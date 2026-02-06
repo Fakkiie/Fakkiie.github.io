@@ -67,7 +67,7 @@ export default function App() {
   const papers = [
     {
       title:
-        "Evaluating Early Stopping and Pre-filtering Optimizations for Eclat and FP-Growt",
+        "Evaluating Early Stopping and Pre-filtering Optimizations for Eclat and FP-Growth",
       meta: "In preparation",
       read: "15 min read",
       desc: "improving efficiency in frequent itemset mining through adaptive techniques.",
