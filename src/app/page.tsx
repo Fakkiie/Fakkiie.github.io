@@ -80,7 +80,7 @@ export default function App() {
         "Secure Charging Session Management in V2G Systems using Blockchain",
       meta: "Submitted",
       read: "9 min read",
-      desc: "a blockchain-based framework to ensure integrity and security in vehicle-to-grid charging sessions. (3 page poster)",
+      desc: "a blockchain-based framework to ensure integrity and security in vehicle-to-grid charging sessions (3 page poster).",
       tagJp: "継",
       tagEn: "consistency",
       href: "/papers/evposter.pdf",
@@ -104,6 +104,16 @@ export default function App() {
       tagJp: "和",
       tagEn: "balance",
       href: "/papers/blackjack.pdf",
+    },
+        {
+      title:
+        "A Secure Session Resumption Mechanism for Vehicle-to-Grid Charging",
+      meta: "Submitted",
+      read: "13 min read",
+      desc: "a blockchain based solution to secure ev networks (6 page poster).",
+      tagJp: "決心",
+      tagEn: "determination",
+      href: "/papers/ev6page.pdf",
     },
   ];
 
